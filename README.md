@@ -26,9 +26,9 @@
 
 Ссылка на образ [node](https://hub.docker.com/_/node)
 
-#### Команды
+## Команды
 
-Документация описание команд на оф. сайте [ссылка](https://docs.docker.com/engine/reference/commandline/docker/)
+_Документация:_ список команд и их описание на оф. сайте [ссылка](https://docs.docker.com/engine/reference/commandline/docker/)
 
 - Просмотр всех возможных команд `docker --help`
 - Справка по любой команде `docker ps --help`
