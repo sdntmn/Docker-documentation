@@ -45,7 +45,7 @@
   docker pull node:16.18
   ```
 
-  `просмотр` установленных `images`:
+  _просмотр_ установленных _images_:
 
   ```
   docker images
