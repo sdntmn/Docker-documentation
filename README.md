@@ -34,11 +34,17 @@
 - Установка логических параметров отличающихся от параметров по умолчанию (например, `docker build --rm=false .` )
 
 - для установки образа (последняя доступная по умолчанию версия):
-  `docker pull node`
+  ```
+  docker pull node
+  ```
 - для установки образа нужной версии:
-  `docker pull node:16.18`
+  ```
+  docker pull node:16.18
+  ```
 - для просмотра установленных images:
-  `docker images`
+  ```
+  docker images
+  ```
 
 ```js
 REPOSITORY   TAG       IMAGE ID       CREATED        SIZE
