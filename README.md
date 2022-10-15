@@ -26,8 +26,18 @@
 
 Ссылка на образ [node](https://hub.docker.com/_/node)
 
-#### Командs
+#### Команды
 
 - для установки образа: `docker pull node` - последняя доступная по умолчанию версия
 - для установки образа нужной версии: `docker pull node:16.18`
 - для просмотра установленных images: `docker images`
+
+```js
+REPOSITORY   TAG       IMAGE ID       CREATED        SIZE
+<none>       <none>    91f60b67e592   37 hours ago   996MB
+node         16.18     147af8719073   38 hours ago   911MB
+node         latest    35ff1df466e8   9 days ago     991MB
+```
+
+- запуск контейнера на основе определенного образа по имени `docker run node`
+- запуск контейнера на основе определенного образа по id `147af8719073`
