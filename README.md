@@ -28,6 +28,8 @@
 
 #### Команды
 
+Документация описание команд на оф. сайте [ссылка](https://docs.docker.com/engine/reference/commandline/docker/)
+
 - Просмотр всех возможных команд `docker --help`
 - Справка по любой команде `docker ps --help`
 - Односимвольные параметры командной строки можно комбинировать, поэтому вместо ввода (например, `docker run -i -t --name test busybox sh`) вы можете писать (`docker run -it --name test busybox sh`)
