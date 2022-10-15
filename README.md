@@ -28,6 +28,11 @@
 
 #### Команды
 
+- Просмотр всех возможных команд (например,`docker --help`)
+- Справка по любой команде (например,`docker ps --help`)
+- Односимвольные параметры командной строки можно комбинировать, поэтому вместо ввода (например, `docker run -i -t --name test busybox sh`) вы можете писать (`docker run -it --name test busybox sh`)
+- Установка логических параметров отличающихся от параметров по умолчанию (например, `docker build --rm=false .` )
+
 - для установки образа: `docker pull node` - последняя доступная по умолчанию версия
 - для установки образа нужной версии: `docker pull node:16.18`
 - для просмотра установленных images: `docker images`
@@ -40,4 +45,9 @@ node         latest    35ff1df466e8   9 days ago     991MB
 ```
 
 - запуск контейнера на основе определенного образа по имени `docker run node`
-- запуск контейнера на основе определенного образа по id `147af8719073`
+- запуск контейнера на основе определенного образа по id `docker run 147af8719073`
+
+```js
+CONTAINER ID   IMAGE        COMMAND                  CREATED             STATUS             PORTS     NAMES
+539e3a116eff   node:16.18   "docker-entrypoint.s…"   About an hour ago   Up About an hour             hardcore_hellman
+```
