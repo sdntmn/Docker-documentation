@@ -22,8 +22,10 @@
 
 ## Images
 
-Получение заранее заготовленных образов - [images](https://hub.docker.com/)
-Образ [node](https://hub.docker.com/_/node)
+Получение заранее заготовленных образов с официального сайта - [images](https://hub.docker.com/)
+
+Получить образ [node](https://hub.docker.com/_/node)
 
 Команды для установки образа `docker pull node` - последняя доступная по умолчанию версия
+
 Команды для установки образа нужной версии `docker pull node:16.18`
