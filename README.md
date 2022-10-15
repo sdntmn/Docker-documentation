@@ -22,9 +22,9 @@
 
 ## Images - образы
 
-Получение заранее заготовленных образов с официального сайта - [images](https://hub.docker.com/)
+Ссылка на заранее заготовленные образы с официального сайта - [images](https://hub.docker.com/)
 
-Получить образ [node](https://hub.docker.com/_/node)
+Ссылка на образ [node](https://hub.docker.com/_/node)
 
 Команда для установки образа: `docker pull node` - последняя доступная по умолчанию версия
 
