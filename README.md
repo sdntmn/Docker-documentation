@@ -73,3 +73,22 @@ node         latest    35ff1df466e8   9 days ago     991MB
 CONTAINER ID   IMAGE        COMMAND                  CREATED             STATUS             PORTS     NAMES
 539e3a116eff   node:16.18   "docker-entrypoint.s…"   About an hour ago   Up About an hour             hardcore_hellman
 ```
+
+создание Dockerfile `touch Dockerfile`
+
+```js
+# Устанавливаем образ(image) который будет использоваться (node:16.18)
+FROM node:16.18
+# рабочая директория
+WORKDIR /app
+#копируем файл package.json
+COPY package.json .
+#устанавливаем зависимости
+RUN npm install
+# копирование всего
+COPY . .
+#порт приложения
+EXPOSE 3000
+# старт приложения
+CMD ["npm", "start"]
+```
