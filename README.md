@@ -41,17 +41,25 @@
 
 - [Базовые команды](/docs/BaseCommand.md)
 
+### Пример создания контейнера для React приложения
+
+### 1. Устанавливаем нужный образ с официального сайта[images](https://hub.docker.com/)
+
 **установка образа** (последняя доступная по умолчанию версия):
 
 ```
 docker pull node
 ```
 
+или
+
 **установка** образа **нужной версии**:
 
 ```
 docker pull node:16.18
 ```
+
+### Отступление для общего понимания
 
 **просмотр** установленных **images**:
 
@@ -74,7 +82,10 @@ CONTAINER ID   IMAGE        COMMAND                  CREATED             STATUS 
 539e3a116eff   node:16.18   "docker-entrypoint.s…"   About an hour ago   Up About an hour             hardcore_hellman
 ```
 
-создание Dockerfile `touch Dockerfile`
+### 2. Создаем Dockerfile
+
+- создание Dockerfile `touch Dockerfile` , ну или ручками в корневой директории
+- наполнение Dockerfile:
 
 ```js
 # Устанавливаем образ(image) который будет использоваться (node:16.18)
@@ -92,3 +103,8 @@ EXPOSE 3000
 # старт приложения
 CMD ["npm", "start"]
 ```
+
+- На основании прописаных инструкций в Dockerfile создаем образ командой `docker build --tag react .`
+- Запускаем контейнер созданного образа `docker run react` - на порту по умолчанию
+- Запускаем контейнер созданного образа `docker run -p 80:3000 react` - на нужном нам порту выставляем флаг `-p` - и прописываем порт
+- Если хотим работать в этом же терминале то добавляем флаг `-d` - команда `docker run -d -p 80:3000 react`
